@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TAIL Smart Pet Collar - A New Era of Smart Pet Life</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <style>
+
+        body {
+
+            font-family: 'Poppins', 'Noto Sans SC', sans-serif;
+
+            background-color: #f8fafc;
+
+        }
+
+        .brand-orange { color: #f97316; }
+
+        .bg-brand-orange { background-color: #f97316; }
+
+        .hover\:bg-brand-orange-dark:hover { background-color: #ea580c; }
+
+        .border-brand-orange { border-color: #f97316; }
+
+        .progress-bar-fill {
+
+            background-color: #22c55e;
+
+            transition: width 0.5s ease-in-out;
+
+        }
+
+        .section-title {
+
+            font-size: 2.25rem;
+
+            font-weight: 700;
+
+            line-height: 2.5rem;
+
+            text-align: center;
+
+            margin-bottom: 1rem;
+
+        }
+
+        .section-subtitle {
+
+            font-size: 1.125rem;
+
+            line-height: 1.75rem;
+
+            color: #64748b;
+
+            text-align: center;
+
+            max-width: 600px;
+
+            margin: 0 auto 3rem auto;
+
+        }
+
+        .ksp-card {
+
+            background-color: white;
+
+            border-radius: 1.5rem;
+
+            padding: 2rem;
+
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.05);
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+
+        .ksp-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+
+        }
+
+        .reward-card {
+
+            border: 2px solid #e5e7eb;
+
+            transition: border-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .reward-card:hover {
+
+            transform: translateY(-5px);
+
+            border-color: #f97316;
+
+        }
+
+        .timeline-item::before {
+
+            content: '';
+
+            position: absolute;
+
+            left: 11px;
+
+            top: 28px;
+
+            bottom: 0;
+
+            width: 2px;
+
+            background-color: #e2e8f0;
+
+        }
+
+        .timeline-item:last-child::before {
+
+            display: none;
+
+        }
+
+        .timeline-dot {
+
+            position: absolute;
+
+            left: 0;
+
+            top: 12px;
+
+            width: 24px;
+
+            height: 24px;
+
+            border-radius: 9999px;
+
+            background-color: white;
+
+            border: 4px solid #e2e8f0;
+
+            transition: border-color 0.3s ease;
+
+        }
+
+        .timeline-item:hover .timeline-dot {
+
+            border-color: #22c55e;
+
+        }
+
+        .pet-icon {
+
+            width: 24px;
+
+            height: 24px;
+
+            stroke-width: 2;
+
+            color: #f97316;
+
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+
+
+    <!-- Header -->
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+
+            <div class="text-2xl font-bold brand-orange">TAIL</div>
+
+            <div class="hidden md:flex items-center space-x-8">
+
+                <a href="#story" class="text-slate-600 hover:text-brand-orange">Our Story</a>
+
+                <a href="#features" class="text-slate-600 hover:text-brand-orange">Features</a>
+
+                <a href="#rewards" class="text-slate-600 hover:text-brand-orange">Rewards</a>
+
+                <a href="#timeline" class="text-slate-600 hover:text-brand-orange">Timeline</a>
+
+            </div>
+
+            <a href="#rewards" class="bg-brand-orange text-white font-bold py-2 px-6 rounded-full hover:bg-brand-orange-dark transition-colors">
+
+                Back This Project
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <!-- Hero Section -->
+
+        <section class="py-12 md:py-20 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <div class="text-center">
+
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
+
+                        TAIL Smart Collar
+
+                    </h1>
+
+                    <p class="mt-4 text-xl md:text-2xl text-slate-600">Let Love Last Longer</p>
+
+                </div>
+
+                <div class="mt-10 max-w-4xl mx-auto">
+
+                    <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
+
+                        <img src="dog.JPEG" alt="Dog wearing the TAIL collar" class="w-full h-full object-cover">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-10 max-w-2xl mx-auto">
+
+                    <div class="bg-white p-6 rounded-2xl ">
+
+                        <div class="flex justify-between items-end mb-2">
+
+                            <div class="text-3xl font-bold text-slate-900">$108,650</div>
+
+                            <div class="text-slate-500">pledged of $50,000 goal</div>
+
+                        </div>
+
+                        <div class="w-full bg-slate-200 rounded-full h-3">
+
+                            <div class="progress-bar-fill h-3 rounded-full" style="width: 217%;"></div>
+
+                        </div>
+
+                        <div class="mt-4 grid grid-cols-3 gap-4 text-center">
+
+                            <div>
+
+                                <div class="text-2xl font-bold">543</div>
+
+                                <div class="text-sm text-slate-500">backers</div>
+
+                            </div>
+
+                            <div>
+
+                                <div class="text-2xl font-bold">25</div>
+
+                                <div class="text-sm text-slate-500">days to go</div>
+
+                            </div>
+
+                            <div>
+
+                                <div class="text-green-500 font-bold text-lg pt-3">Funded!</div>
+
+                            </div>
+
+                        </div>
+
+                        <a href="#rewards" class="mt-6 block w-full text-center bg-brand-orange text-white text-lg font-bold py-4 px-6 rounded-full hover:bg-brand-orange-dark transition-colors shadow-lg hover:shadow-xl">
+
+                            Select Your Early Bird Reward
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Story Section -->
+
+        <section id="story" class="py-16 md:py-24">
+
+            <div class="container mx-auto px-6">
+
+                <h2 class="section-title">Every Time You Leave, a Worry Lingers</h2>
+
+                <p class="section-subtitle">
+
+                    As pet owners, we all get it. When work or unexpected events take us away from home, a sense of unease creeps in. Is my pet safe? Are they eating well? Is the way I care for them truly scientific?
+
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+                        <i data-feather="alert-circle" class="mx-auto pet-icon"></i>
+
+                        <h3 class="font-bold mt-4 mb-2">Safety Anxiety</h3>
+
+                        <p class="text-slate-600 text-sm">Worrying about accidents happening while they're alone, without our knowledge.</p>
+
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+                        <i data-feather="cloud-off" class="mx-auto pet-icon"></i>
+
+                        <h3 class="font-bold mt-4 mb-2">Care Gap</h3>
+
+                        <p class="text-slate-600 text-sm">Fearing they won't get timely care due to overtime or being away.</p>
+
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+                        <i data-feather="help-circle" class="mx-auto pet-icon"></i>
+
+                        <h3 class="font-bold mt-4 mb-2">Scientific Care Doubts</h3>
+
+                        <p class="text-slate-600 text-sm">Unsure if our feeding and exercise routines are truly best for their health.</p>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-12 text-center text-lg text-slate-700">
+
+                    Is there a product that ensures our pets receive **thoughtful, personalized, and informed** care, even when we're far away?
+
+                    <br>
+
+                    <strong class="brand-orange text-xl">Now, there is TAIL.</strong>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Features Section -->
+
+        <section id="features" class="py-16 md:py-24 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <h2 class="section-title">TAIL, More Than Just a Collar</h2>
+
+                <p class="section-subtitle">
+
+                    It's an AI-powered smart terminal that integrates monitoring, analysis, and control. Wherever you are, you can easily check on your pet and manage their home environment.
+
+                </p>
+
+                
+
+                <!-- Feature 1: House Intelligent Linkage -->
+
+                <div class="ksp-card grid md:grid-cols-2 gap-12 items-center mb-12">
+
+                    <div class="rounded-xl overflow-hidden"><img src="petlink.png" alt="PetLink System"></div>
+
+                    <div>
+
+                        <div class="inline-flex items-center bg-orange-100 text-brand-orange font-bold px-3 py-1 rounded-full text-sm mb-4">Key Selling Point 1</div>
+
+                        <h3 class="text-3xl font-bold mb-4">PetLink™ Whole-Home Linkage</h3>
+
+                        <p class="text-slate-600 mb-4">TAIL is your pet's smart life manager. It seamlessly connects with smart litter boxes, feeders, cameras, and more. Even when you're not home, you can remotely manage their diet, potty breaks, and routine to create the most thoughtful environment.</p>
+
+                        <p class="font-semibold">Slogan: Uninterrupted care—your pet is thoughtfully looked after, even when you're not home.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Feature 2: AI Assistance -->
+
+                <div class="ksp-card grid md:grid-cols-2 gap-12 items-center mb-12">
+
+                    <div class="md:order-2 rounded-xl overflow-hidden"><img src="Ai.png" alt="AI-Powered Pet Care"></div>
+
+                    <div class="md:order-1">
+
+                        <div class="inline-flex items-center bg-blue-100 text-blue-600 font-bold px-3 py-1 rounded-full text-sm mb-4">Key Selling Point 2</div>
+
+                        <h3 class="text-3xl font-bold mb-4">AI-Powered Pet Care</h3>
+
+                        <p class="text-slate-600 mb-4">TAIL doesn't just record data—it understands it. Through vocal and behavior analysis, it interprets your pet's emotions and needs. Combined with health data, it intelligently recommends custom meal plans and exercise routines.</p>
+
+                        <p class="font-semibold">Slogan: Understand their language, love their world.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Feature 3: Medical Assistance -->
+
+                <div class="ksp-card grid md:grid-cols-2 gap-12 items-center mb-12">
+
+                    <div class="rounded-xl overflow-hidden"><img src="hospital.png" alt="Professional Medical Assistance"></div>
+
+                    <div>
+
+                        <div class="inline-flex items-center bg-green-100 text-green-600 font-bold px-3 py-1 rounded-full text-sm mb-4">Key Selling Point 3</div>
+
+                        <h3 class="text-3xl font-bold mb-4">Professional Medical Assistance</h3>
+
+                        <p class="text-slate-600 mb-4">We've partnered with veterinary clinics in major cities, supporting one-tap uploads and syncing of your pet's electronic medical records. Backed by data from 500+ veterinary professionals, we safeguard your pet's health.</p>
+
+                        <p class="font-semibold">Slogan: One-tap upload of e-medical records, supported by 500+ veterinary professionals.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Feature 4: Health Monitoring -->
+
+                <div class="ksp-card grid md:grid-cols-2 gap-12 items-center mb-12">
+
+                    <div class="md:order-2 rounded-xl overflow-hidden"><img src="health.png" alt="Comprehensive Health Monitoring"></div>
+
+                    <div class="md:order-1">
+
+                        <div class="inline-flex items-center bg-red-100 text-red-600 font-bold px-3 py-1 rounded-full text-sm mb-4">Key Selling Point 4</div>
+
+                        <h3 class="text-3xl font-bold mb-4">Comprehensive Health Monitoring</h3>
+
+                        <p class="text-slate-600 mb-4">From heart rate and temperature to activity levels and sleep quality, plus GPS tracking, TAIL records your pet's vital data 24/7. Get instant status updates and timely alerts for emergencies, covering both health and safety.</p>
+
+                        <p class="font-semibold">Slogan: Not just a 'monitor'—a true guardian of health.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Feature 5: Long-lasting Battery -->
+
+                <div class="ksp-card grid md:grid-cols-2 gap-12 items-center">
+
+                    <div class="rounded-xl overflow-hidden"><img src="battery.png" alt="Long-lasting Battery"></div>
+
+                    <div>
+
+                        <div class="inline-flex items-center bg-purple-100 text-purple-600 font-bold px-3 py-1 rounded-full text-sm mb-4">Key Selling Point 5</div>
+
+                        <h3 class="text-3xl font-bold mb-4">Long-lasting Battery</h3>
+
+                        <p class="text-slate-600 mb-4">Equipped with a high-capacity battery, a single charge lasts for days. Whether it's daily commutes, long trips, or travel, TAIL stays online to update your pet's status, so you never miss a critical moment.</p>
+
+                        <p class="font-semibold">Slogan: Maxed-out battery, uninterrupted protection. "Always online in your pet's world."</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+        <!-- Tech Specs Section -->
+
+        <section id="specs" class="py-16 md:py-24">
+
+            <div class="container mx-auto px-6">
+
+                <h2 class="section-title">Intelligently Crafted for Your Pet</h2>
+
+                <p class="section-subtitle">Every detail is designed for comfort, safety, and durability.</p>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                    <div class="text-center">
+
+                        <img src="tail.png" alt="TAIL collar product shot" class="max-w-sm mx-auto">
+
+                        <div class="mt-4 flex justify-center space-x-3">
+
+                            <div class="w-8 h-8 rounded-full bg-black border-2 border-slate-300"></div>
+
+                            <div class="w-8 h-8 rounded-full bg-white border-2 border-slate-300"></div>
+
+                            <div class="w-8 h-8 rounded-full bg-pink-400 border-2 border-slate-300"></div>
+
+                            <div class="w-8 h-8 rounded-full bg-blue-500 border-2 border-slate-300"></div>
+
+                        </div>
+
+                        <p class="mt-2 text-sm text-slate-500">Multiple Colors Available</p>
+
+                    </div>
+
+                    <div class="space-y-4">
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="shield" class="mr-3 pet-icon"></i> <strong>Waterproof Rating:</strong> &nbsp;IP68</div>
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="minimize-2" class="mr-3 pet-icon"></i> <strong>Dimensions:</strong> &nbsp;~20 cm (L) x 2 cm (W)</div>
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="feather" class="mr-3 pet-icon"></i> <strong>Weight:</strong> &nbsp;~35g (Lightweight for comfort)</div>
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="layers" class="mr-3 pet-icon"></i> <strong>Material:</strong> &nbsp;Woven Nylon or Skin-friendly Silicone</div>
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="bluetooth" class="mr-3 pet-icon"></i> <strong>Connectivity:</strong> &nbsp;Bluetooth 5.0, WiFi 6</div>
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="battery-charging" class="mr-3 pet-icon"></i> <strong>Charging:</strong> &nbsp;Wireless Charging Supported</div>
+
+                        <div class="bg-white p-4 rounded-lg flex items-center"><i data-feather="hard-drive" class="mr-3 pet-icon"></i> <strong>Storage:</strong> &nbsp;8GB or 16GB Built-in</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Rewards Section -->
+
+        <section id="rewards" class="py-16 md:py-24 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <h2 class="section-title">Choose Your Reward</h2>
+
+                <p class="section-subtitle">Be among the first to own TAIL and give your pet the smartest love at the best price.</p>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                    <!-- Reward 1 -->
+
+                    <div class="reward-card bg-white p-6 rounded-2xl flex flex-col">
+
+                        <div class="bg-orange-100 text-brand-orange font-bold px-3 py-1 rounded-full text-sm self-start">Super Early Bird</div>
+
+                        <div class="my-4"><span class="text-4xl font-bold">$169</span> <span class="text-slate-500 line-through">$199</span></div>
+
+                        <h3 class="font-bold text-lg">TAIL Smart Collar x1</h3>
+
+                        <p class="text-slate-600 text-sm my-4 flex-grow">Includes one TAIL Smart Collar, wireless charger, and full app functionality. Save 15% off the retail price!</p>
+
+                        <ul class="text-sm space-y-2 mb-6">
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> TAIL Smart Collar</li>
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> Wireless Charger</li>
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> Lifetime subscription (No monthly fees)</li>
+
+                        </ul>
+
+                        <div class="text-xs text-slate-400 mb-4">Estimated delivery: June 2026</div>
+
+                        <button class="w-full mt-auto bg-brand-orange text-white font-bold py-3 px-6 rounded-full hover:bg-brand-orange-dark transition-colors">Select this reward</button>
+
+                    </div>
+
+                    <!-- Reward 2 -->
+
+                    <div class="reward-card bg-white p-6 rounded-2xl flex flex-col border-brand-orange border-2 relative">
+
+                        <div class="absolute -top-4 right-6 bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+
+                        <div class="bg-orange-100 text-brand-orange font-bold px-3 py-1 rounded-full text-sm self-start">Early Bird Double Pack</div>
+
+                        <div class="my-4"><span class="text-4xl font-bold">$329</span> <span class="text-slate-500 line-through">$398</span></div>
+
+                        <h3 class="font-bold text-lg">TAIL Smart Collar x2</h3>
+
+                        <p class="text-slate-600 text-sm my-4 flex-grow">Have two furry friends? This pack is perfect for you! Includes two TAIL Smart Collars and accessories. Save nearly 18%!</p>
+
+                        <ul class="text-sm space-y-2 mb-6">
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> 2 x TAIL Smart Collars</li>
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> 2 x Wireless Chargers</li>
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> Lifetime subscription (No monthly fees)</li>
+
+                        </ul>
+
+                        <div class="text-xs text-slate-400 mb-4">Estimated delivery: June 2026</div>
+
+                        <button class="w-full mt-auto bg-brand-orange text-white font-bold py-3 px-6 rounded-full hover:bg-brand-orange-dark transition-colors">Select this reward</button>
+
+                    </div>
+
+                    <!-- Reward 3 -->
+
+                    <div class="reward-card bg-white p-6 rounded-2xl flex flex-col">
+
+                        <div class="bg-orange-100 text-brand-orange font-bold px-3 py-1 rounded-full text-sm self-start">Crowdfunding Special</div>
+
+                        <div class="my-4"><span class="text-4xl font-bold">$179</span> <span class="text-slate-500 line-through">$199</span></div>
+
+                        <h3 class="font-bold text-lg">TAIL Smart Collar x1</h3>
+
+                        <p class="text-slate-600 text-sm my-4 flex-grow">Missed the early bird? No worries! Still enjoy a 10% discount during the campaign. Includes one TAIL Smart Collar and all accessories.</p>
+
+                        <ul class="text-sm space-y-2 mb-6">
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> TAIL Smart Collar</li>
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> Wireless Charger</li>
+
+                            <li class="flex items-center"><i data-feather="check" class="w-4 h-4 text-green-500 mr-2"></i> Lifetime subscription (No monthly fees)</li>
+
+                        </ul>
+
+                        <div class="text-xs text-slate-400 mb-4">Estimated delivery: June 2026</div>
+
+                        <button class="w-full mt-auto bg-brand-orange text-white font-bold py-3 px-6 rounded-full hover:bg-brand-orange-dark transition-colors">Select this reward</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Brand Story -->
+
+        <section id="brand" class="py-16 md:py-24">
+
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="rounded-2xl overflow-hidden shadow-lg"><img src="panson.png" alt="PANSON brand philosophy"></div>
+
+                <div>
+
+                    <h2 class="text-3xl font-bold mb-4">About Us - PANSON</h2>
+
+                    <p class="text-slate-600 mb-4">PANSON is a global mid-to-high-end pet electronic consumer products company, dedicated to creating a better pet-keeping experience through innovative technology. We firmly believe that the power of technology can redefine the relationship between humans and pets, making companionship smarter, more convenient, and full of fun.</p>
+
+                    <p class="text-slate-600">The TAIL series smart collar is our core product, integrating advanced AI algorithms and whole-home smart solutions. Our vision is to become a leading brand in the global pet electronic consumer products field and to create a happier, better life for pet owners worldwide.</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Timeline Section -->
+
+        <section id="timeline" class="py-16 md:py-24 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <h2 class="section-title">Our Project Timeline</h2>
+
+                <p class="section-subtitle">We have meticulously planned every step to ensure we deliver the best TAIL to you on time.</p>
+
+                <div class="max-w-2xl mx-auto mt-12">
+
+                    <div class="relative space-y-12">
+
+                        <div class="timeline-item pl-12 relative">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="font-bold text-slate-500 text-sm">Q4 2024</div>
+
+                            <h4 class="font-bold text-lg mt-1">Crowdfunding Launch</h4>
+
+                            <p class="text-slate-600 text-sm">Officially launch the campaign and meet our first backers.</p>
+
+                        </div>
+
+                        <div class="timeline-item pl-12 relative">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="font-bold text-slate-500 text-sm">Q1 2025</div>
+
+                            <h4 class="font-bold text-lg mt-1">Production Prep</h4>
+
+                            <p class="text-slate-600 text-sm">Finalize molds and confirm production plans with our supply chain partners.</p>
+
+                        </div>
+
+                        <div class="timeline-item pl-12 relative">
+
+                            <div class="timeline-dot"></div>
+
+                            <div class="font-bold text-slate-500 text-sm">Q4 2025</div>
+
+                            <h4 class="font-bold text-lg mt-1">First Mass Production</h4>
+
+                            <p class="text-slate-600 text-sm">Begin production of the first batch of TAIL smart collars with strict quality control.</p>
+
+                        </div>
+
+                        <div class="timeline-item pl-12 relative">
+
+                             <div class="timeline-dot"></div>
+
+                            <div class="font-bold text-slate-500 text-sm">Q2 2026</div>
+
+                            <h4 class="font-bold text-lg mt-1">Shipping Begins</h4>
+
+                            <p class="text-slate-600 text-sm">Package your TAIL and deliver it to your doorstep!</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-slate-900 text-slate-400">
+
+        <div class="container mx-auto px-6 py-12">
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div>
+
+                    <h3 class="text-xl font-bold text-white mb-4">TAIL by PANSON</h3>
+
+                    <p class="text-sm">Empowering with Technology, Let Love Last Longer.</p>
+
+                </div>
+
+                <div>
+
+                    <h3 class="text-lg font-semibold text-white mb-4">Stay Connected</h3>
+
+                    <p class="text-sm mb-4">Follow us on social media for the latest project updates!</p>
+
+                    <div class="flex space-x-4">
+
+                        <a href="#" class="hover:text-white"><i data-feather="twitter"></i></a>
+
+                        <a href="#" class="hover:text-white"><i data-feather="facebook"></i></a>
+
+                        <a href="#" class="hover:text-white"><i data-feather="instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <h3 class="text-lg font-semibold text-white mb-4">Join Our Mailing List</h3>
+
+                    <form class="flex">
+
+                        <input type="email" placeholder="Your email" class="bg-slate-800 text-white px-4 py-2 rounded-l-full w-full focus:outline-none focus:ring-2 focus:ring-brand-orange">
+
+                        <button class="bg-brand-orange text-white px-4 py-2 rounded-r-full hover:bg-brand-orange-dark">&rarr;</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="mt-12 border-t border-slate-800 pt-8 text-center text-sm">
+
+                &copy; 2025 PANSON Inc. All rights reserved. This is a sample page designed for a crowdfunding campaign.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+
+        feather.replace()
+
+    </script>
+
+</body>
+
+</html>
